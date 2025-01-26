@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "growth-curves"
+version = "0.1.0"
+description = ""
+authors = ["Karissa Chan <84393649+KarissaChan1@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.11"
+rpy2 = "3.5.17"
+pandas = "2.2.3"
+pytest = "^8.3.3"
+reportlab = "^4.2.5"
+openpyxl = "^3.1.5"
+matplotlib = "^3.10.0"
+
+[tool.poetry.scripts]
+growth_curves = "growth_curves.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
